@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@keyframes test{
+    from {right: 0}
+    to {right: 224px}
+}
+
+#construction-warning{
+    background-color: #000;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.warning-ticker{
+    position: absolute;
+    background-color: gold;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.ticker-body{
+    position: relative;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    animation-name: test;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+#ticker-top{
+    top: 0%;
+    transform: translate(-50px, -10px) rotate(-15deg);
+}
+
+#ticker-top > .ticker-body{
+    animation-direction: reverse;
+}
+
+#ticker-bot{
+    bottom: 0%;
+    transform: translate(50px, 10px) rotate(-15deg);
+}
+
+.ticker-stripes{
+    flex-shrink: 0;
+}
+
+.ticker-text{
+    padding: 0 20px;
+    font-size: 48px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+}
+
+.ticker-box{
+    background-color: #000000bb;
+    height: 34px;
+    width: 10px;
+    display: inline-block;
+    transform: skewX(-30deg);
+    margin: 0 2px;
+}
+
+#warning-content{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family: 'Rubik', sans-serif;
+}
+
+#warning-content > *{
+    text-align: center;
+}
+
+#warning-header{
+    font-size: 40px;
+}

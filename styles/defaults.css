@@ -28,9 +28,10 @@ body{
 }
 
 footer{
-    background-color: #333;
-    color:white;
+    background-color: #222;
     padding: 8px;
     text-align: center;
     margin-top: auto;
+    color:white;
+    font-family: 'Rubik', sans-serif;
 }
