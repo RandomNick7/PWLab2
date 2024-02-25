@@ -10,7 +10,7 @@
 
 @keyframes test{
     from {right: 0}
-    to {right: 224px}
+    to {right: 218px}
 }
 
 #construction-warning{
@@ -31,7 +31,6 @@
 .ticker-body{
     position: relative;
     display:flex;
-    align-items: center;
     width: 100%;
     animation-name: test;
     animation-duration: 1s;
@@ -39,10 +38,9 @@
     animation-timing-function: linear;
 }
 
-
 #ticker-top{
     top: 0%;
-    transform: translate(-50px, -10px) rotate(-15deg);
+    transform: translate(-150px, -10px) rotate(-15deg);
 }
 
 #ticker-top > .ticker-body{
@@ -51,15 +49,21 @@
 
 #ticker-bot{
     bottom: 0%;
-    transform: translate(50px, 10px) rotate(-15deg);
+    transform: translate(150px, 10px) rotate(-15deg);
+}
+
+.ticker-unit{
+    display: flex;
+    align-items: center;
 }
 
 .ticker-stripes{
-    flex-shrink: 0;
+    display: flex;
+    /* Weird half-pixel value to vertically align with the text */
+    margin: 0 12px 4.5px;   
 }
 
 .ticker-text{
-    padding: 0 20px;
     font-size: 48px;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
@@ -68,10 +72,10 @@
 .ticker-box{
     background-color: #000000bb;
     height: 34px;
-    width: 10px;
+    width: 12px;
     display: inline-block;
     transform: skewX(-30deg);
-    margin: 0 2px;
+    margin: 0 4px;
 }
 
 #warning-content{
